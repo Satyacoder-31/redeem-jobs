@@ -41,8 +41,9 @@ function LoginInner() {
         if (password.length < 6) throw new Error("Password must be at least 6 characters.");
 
         const { error } = await signUp(email, password, {
-          full_name: fullName.trim(),
+          fullName: fullName.trim(),
           role: role,
+          companyName: role === "employer" ? companyName.trim() : undefined,
         });
         if (error) throw error;
 

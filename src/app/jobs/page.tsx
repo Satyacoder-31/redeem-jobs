@@ -62,13 +62,20 @@ function JobsInner() {
     // Search keyword
     if (keyword.trim()) {
       const kl = keyword.toLowerCase();
-      out = out.filter(
-        (j) =>
+      out = out.filter((j) => {
+        const comp = (j as any).company;
+        const compName =
+          typeof comp === "object"
+            ? comp?.name || ""
+            : typeof comp === "string"
+            ? comp
+            : "";
+        return (
           j.title.toLowerCase().includes(kl) ||
-          (typeof j.company === "object" && j.company?.name?.toLowerCase().includes(kl)) ||
-          (typeof j.company === "string" && j.company.toLowerCase().includes(kl)) ||
-          (j.skills && j.skills.some((s) => s.toLowerCase().includes(kl)))
-      );
+          compName.toLowerCase().includes(kl) ||
+          (Array.isArray(j.skills) && j.skills.some((s: string) => s.toLowerCase().includes(kl)))
+        );
+      });
     }
 
     // Location
