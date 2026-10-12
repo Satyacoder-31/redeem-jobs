@@ -606,8 +606,8 @@ export default function HomePage() {
 
           <div className="max-w-3xl mx-auto text-center space-y-5">
             <div className="flex justify-center mb-2">
-              <div className="p-4 rounded-3xl bg-white shadow-2xl border border-white/20 inline-block hover:scale-[1.02] transition-transform">
-                <RedeemJobsLogo variant="stacked" height={60} />
+              <div className="p-2 inline-block hover:scale-[1.03] transition-transform">
+                <RedeemJobsLogo variant="stacked" height={70} />
               </div>
             </div>
             <div className="pt-2">

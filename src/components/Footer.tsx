@@ -74,10 +74,8 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-6 gap-8 mt-16 pt-8 border-t border-white/[0.06]">
           {/* Brand info */}
           <div className="col-span-2">
-            <Link href="/" className="inline-block mb-4 group hover:scale-[1.02] transition-transform">
-              <div className="inline-flex px-4 py-2 rounded-2xl bg-white shadow-md border border-white/20">
-                <RedeemJobsLogo variant="horizontal" height={36} />
-              </div>
+            <Link href="/" className="inline-block mb-4 group hover:scale-[1.03] transition-transform">
+              <RedeemJobsLogo variant="horizontal" height={40} />
             </Link>
             <p className="text-xs sm:text-sm text-slate-400 leading-relaxed max-w-sm font-normal">
               Premier Training &amp; Placement Solutions network connecting pre-skilled talent with verified enterprises, startups, and hypergrowth companies across India.

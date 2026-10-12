@@ -24,43 +24,28 @@ export default function RedeemJobsLogo({
           src="/brand/redeem-jobs-mark-hd.png"
           alt="RTP Logo Mark"
           style={{ height: `${height}px`, width: "auto" }}
-          className="object-contain drop-shadow-[0_2px_8px_rgba(225,29,35,0.4)]"
+          className="object-contain drop-shadow-[0_2px_10px_rgba(239,68,68,0.45)]"
           loading="eager"
         />
       </div>
     );
   }
 
-  // Original uploaded logo as-is (with white background / card)
-  if (variant === "original") {
-    return (
-      <div className={`inline-flex items-center justify-center rounded-xl overflow-hidden bg-white p-1 shadow-md border border-white/20 shrink-0 ${className}`}>
-        <img
-          src="/brand/redeem-jobs-original.jpg"
-          alt="REDEEM JOBS Logo"
-          style={{ height: `${height}px`, width: "auto" }}
-          className="object-contain"
-          loading="eager"
-        />
-      </div>
-    );
-  }
-
-  // Stacked variant: Exactly like the reference image (RTP on top, REDEEM JOBS in middle, Training & Placement Solutions on bottom)
-  if (variant === "stacked") {
+  // Original / Stacked variant: Authentic logo with 100% transparent background
+  if (variant === "original" || variant === "stacked") {
     const content = (
       <img
         src="/brand/redeem-jobs-hd.png"
         alt="REDEEM JOBS — Training & Placement Solutions"
         style={{ height: `${height}px`, width: "auto" }}
-        className="object-contain drop-shadow-[0_2px_12px_rgba(225,29,35,0.3)] transition-transform hover:scale-[1.02]"
+        className="object-contain drop-shadow-[0_4px_16px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.02]"
         loading="eager"
       />
     );
 
     if (withBadge) {
       return (
-        <div className={`inline-flex items-center justify-center p-3 rounded-2xl bg-white shadow-xl border border-slate-200 shrink-0 ${className}`}>
+        <div className={`inline-flex items-center justify-center p-3 rounded-2xl bg-white/[0.04] backdrop-blur-md shadow-xl border border-white/10 shrink-0 ${className}`}>
           {content}
         </div>
       );
@@ -79,14 +64,14 @@ export default function RedeemJobsLogo({
       src="/brand/redeem-jobs-horizontal-hd.png"
       alt="REDEEM JOBS — Training & Placement Solutions"
       style={{ height: `${height}px`, width: "auto" }}
-      className="object-contain drop-shadow-[0_2px_8px_rgba(225,29,35,0.35)] transition-transform hover:scale-[1.02]"
+      className="object-contain drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] transition-transform hover:scale-[1.02]"
       loading="eager"
     />
   );
 
   if (withBadge) {
     return (
-      <div className={`inline-flex items-center justify-center px-3.5 py-1.5 rounded-2xl bg-white shadow-md border border-slate-200 shrink-0 ${className}`}>
+      <div className={`inline-flex items-center justify-center px-3.5 py-1.5 rounded-2xl bg-white/[0.04] backdrop-blur-md shadow-md border border-white/10 shrink-0 ${className}`}>
         {horizontalContent}
       </div>
     );

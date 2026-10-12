@@ -104,10 +104,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-[66px] gap-4">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0 group hover:scale-[1.02] transition-transform">
-            <div className="px-3.5 py-1.5 rounded-2xl bg-white shadow-md hover:shadow-xl transition-shadow flex items-center border border-white/20">
-              <RedeemJobsLogo variant="horizontal" height={32} />
-            </div>
+          <Link href="/" className="flex items-center shrink-0 group hover:scale-[1.03] transition-transform py-1">
+            <RedeemJobsLogo variant="horizontal" height={36} />
           </Link>
 
           {/* Desktop nav */}

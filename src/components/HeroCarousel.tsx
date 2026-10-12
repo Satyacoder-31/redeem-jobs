@@ -189,10 +189,10 @@ export default function HeroCarousel() {
           <div className="lg:col-span-8 max-w-3xl">
             {/* Brand Emblem & Live Placement Pulse Pill */}
             <div className="flex flex-wrap items-center gap-3 mb-6">
-              <div className="px-3.5 py-1.5 rounded-full bg-white shadow-lg border border-white/20 flex items-center gap-2 hover:scale-105 transition-transform">
+              <div className="px-3.5 py-1.5 rounded-full bg-white/[0.06] hover:bg-white/[0.1] backdrop-blur-md shadow-lg border border-white/15 flex items-center gap-2.5 hover:scale-105 transition-transform">
                 <RedeemJobsLogo variant="mark-only" height={22} />
-                <span className="text-[12px] font-black tracking-wider uppercase text-red-600">
-                  REDEEM <span className="text-amber-500">JOBS</span>
+                <span className="text-[12px] font-black tracking-wider uppercase text-red-500 drop-shadow-sm">
+                  REDEEM <span className="text-amber-400">JOBS</span>
                 </span>
               </div>
 

@@ -85,8 +85,8 @@ function LoginInner() {
       <div className="w-full max-w-md glass-panel rounded-3xl border border-white/10 p-6 sm:p-8 shadow-2xl relative z-10">
         <div className="text-center mb-6">
           <div className="flex justify-center mb-3">
-            <div className="p-3.5 rounded-2xl bg-white shadow-xl border border-white/20 inline-block hover:scale-[1.02] transition-transform">
-              <RedeemJobsLogo variant="stacked" height={52} />
+            <div className="p-2 inline-block hover:scale-[1.03] transition-transform">
+              <RedeemJobsLogo variant="stacked" height={60} />
             </div>
           </div>
           <h1 className="text-xl sm:text-2xl font-black text-white mt-2">
